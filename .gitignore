@@ -36,8 +36,11 @@ bin/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+### VS Code     ###
 .vscode/
 
 ### Mac OS ###
 .DS_Store
+
+### Proyecto ###
+target/site
