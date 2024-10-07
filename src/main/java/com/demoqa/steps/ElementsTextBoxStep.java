@@ -5,6 +5,7 @@ import com.demoqa.utils.EsperaImplicita;
 import net.thucydides.core.annotations.Step;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import static org.hamcrest.Matchers.containsString;
@@ -21,6 +22,7 @@ public class ElementsTextBoxStep {
   }
   @Step
   public void llenarCampos(){
+    ((JavascriptExecutor) elementsTextBoxlPageObject.getDriver()).executeScript("arguments[0].scrollIntoView(true);", elementsTextBoxlPageObject.getDriver().findElement(elementsTextBoxlPageObject.getBtnSubmit()));
     elementsTextBoxlPageObject.getDriver().findElement(elementsTextBoxlPageObject.getTxtFullName()).sendKeys("Julian Chica");
     elementsTextBoxlPageObject.getDriver().findElement(elementsTextBoxlPageObject.getTxtEmail()).sendKeys("pruebas@pruebas.co");
     elementsTextBoxlPageObject.getDriver().findElement(elementsTextBoxlPageObject.getTxtCurrentAddress()).sendKeys("Calle 13 # 1 - 2");
