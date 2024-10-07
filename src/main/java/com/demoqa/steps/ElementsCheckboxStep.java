@@ -21,7 +21,7 @@ public class ElementsCheckboxStep {
     public void llenarChecks(){
         elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getBtnCheckBox()).click();
         elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getChkCheckBox()).click();
-        ((JavascriptExecutor) elementsCheckboxPageObject.getDriver()).executeScript("arguments[0].scrollIntoView(true);", elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getLblWord()));
+        ((JavascriptExecutor) elementsCheckboxPageObject.getDriver()).executeScript("arguments[0].scrollIntoView(true);", elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getLblBajar()));
         elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getLblNote()).click();
         elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getLblWorkSpace()).click();
         elementsCheckboxPageObject.getDriver().findElement(elementsCheckboxPageObject.getLblOffice()).click();

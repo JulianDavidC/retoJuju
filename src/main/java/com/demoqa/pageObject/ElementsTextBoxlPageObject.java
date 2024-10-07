@@ -9,13 +9,13 @@ public class ElementsTextBoxlPageObject extends PageObject {
   By txtEmail = By.id("userEmail");
   By txtCurrentAddress = By.id("currentAddress");
   By txtPermanentAddress = By.id("permanentAddress");
-
   By btnSubmit = By.id("submit");
   By lblFullName = By.xpath("//p[@id='name']");
-
   By lblEmail = By.xpath("//p[@id='email']");
   By lblCurrentAddress = By.xpath("//p[@id='currentAddress']");
   By lblPermanentAddress = By.xpath("//p[@id='permanentAddress']");
+  By lblBajar = By.xpath("//*[@id='app']/div/div/div/div[2]/div[3]");
+
 
   public By getBtnTextBox() {
     return btnTextBox;
@@ -54,5 +54,8 @@ public class ElementsTextBoxlPageObject extends PageObject {
 
   public By getLblPermanentAddress() {
     return lblPermanentAddress;
+  }
+  public By getLblBajar() {
+    return lblBajar;
   }
 }

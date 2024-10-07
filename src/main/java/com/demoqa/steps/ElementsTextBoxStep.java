@@ -31,6 +31,8 @@ public class ElementsTextBoxStep {
   @Step
   public void presionarBotonSubmit(){
     esperaImplicita.esperaImplicita(2);
+    ((JavascriptExecutor) elementsTextBoxlPageObject.getDriver()).executeScript("arguments[0].scrollIntoView(true);", elementsTextBoxlPageObject.getDriver().findElement(elementsTextBoxlPageObject.getLblBajar()));
+
     elementsTextBoxlPageObject.getDriver().findElement(elementsTextBoxlPageObject.getBtnSubmit()).click();
 
 

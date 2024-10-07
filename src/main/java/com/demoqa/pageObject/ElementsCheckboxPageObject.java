@@ -15,6 +15,8 @@ public class ElementsCheckboxPageObject extends PageObject {
     By chkWorkspace = By.xpath("//*[@id='tree-node-workspace']");
     By chkoffice = By.xpath("//*[@id='tree-node-office']");
     By chkwordFile = By.xpath("//*[@id='tree-node-wordFile']");
+    By lblBajar = By.xpath("//*[@id='app']/div/div/div/div[2]/div[3]");
+
 
     public By getBtnCheckBox() {
         return btnCheckBox;
@@ -45,6 +47,9 @@ public class ElementsCheckboxPageObject extends PageObject {
     }
     public By getChkoffice() {
         return chkoffice;
+    }
+    public By getLblBajar() {
+        return lblBajar;
     }
 
 
